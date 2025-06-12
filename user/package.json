@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@react-native-clipboard/clipboard": "^1.14.1",
+    "@react-native-clipboard/clipboard": "^1.16.2",
     "axios": "^1.7.2",
     "expo": "~51.0.17",
     "expo-constants": "~16.0.2",
