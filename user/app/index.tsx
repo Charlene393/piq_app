@@ -1,10 +1,8 @@
-import { View, Text } from "react-native";
-import React from "react";
-
+import {useState} from 'react';
+import { Redirect } from 'expo-router';
 export default function index() {
+  const [isLoggedIn, setisLoggedIn] = useState(false);
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Piq</Text>
-    </View>
+  <Redirect href = {!isLoggedIn? "/(routes)/onboarding/index" : "/(routes)/home/index"} />
   );
 }
