@@ -1,0 +1,1 @@
+import {View, Text, Image, ScrollView} from 'react-native';
