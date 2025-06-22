@@ -10,6 +10,10 @@ const styles = StyleSheet.create({
         backgroundColor: color.whiteColor,
         paddingHorizontal: windowHeight(16),
         paddingVertical: windowHeight(12),
+        borderStartStartRadius: windowHeight(16),
+        borderStartEndRadius: windowHeight(16),
+        borderTopRightRadius: windowHeight(16),
+        borderTopLeftRadius: windowHeight(16),
     },
     backgroundImage:{
         width : "100%",
