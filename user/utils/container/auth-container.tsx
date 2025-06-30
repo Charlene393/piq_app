@@ -2,7 +2,7 @@ import {View, Text, Image, ScrollView} from 'react-native';
 import React, {ReactNode} from 'react';
 import {external} from "@/styles/external.style"
 import Images from "../images";
-import { windowWidth } from '@/themes/app.constant';
+import { windowHeight, windowWidth } from '@/themes/app.constant';
 import styles from './style';
 
 type Props = {
@@ -19,7 +19,9 @@ const AuthContainer =({container, topSpace, imageShow}: Props) => {
                 <Text
                 style = {{
                     fontFamily: "TT-Octosquares-Medium",
-                    fontSize: windowWidth(25),
+                    fontSize: windowWidth(30),
+                    textAlign: "center",
+                    paddingTop: windowHeight(50),
                 }}>
                     PIQ
                 </Text>

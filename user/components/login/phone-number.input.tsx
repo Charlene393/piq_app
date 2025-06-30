@@ -2,7 +2,7 @@ import { View, Text, TextInput } from "react-native";
 import { commonStyles } from "@/styles/common.style";
 import { windowHeight, windowWidth } from "@/themes/app.constant";
 import { external } from "@/styles/external.style";
-import styles from "@/screens/login/styles";
+import styles from '@/Screen/login/style';
 import color from "@/themes/app.colors";
 
 export default function PhoneNumberInput({ width }: any) {
