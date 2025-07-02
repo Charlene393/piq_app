@@ -23,7 +23,8 @@ export default function LoginScreen() {
                         <View style = {[external.mt_25, external.Pb_15]}>
                             <Button
                             title = "Get OTP"
-                            onPress={()=>router.push("/")}
+                            onPress={()=>router.push("/(routes)/otp-verification")}
+
                             />
                         </View>
                     </View>
