@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "RideWave",
-    "slug": "RideWave",
+    "name": "piq",
+    "slug": "piq",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "scheme": "RideWave",
+    "scheme": "piq",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
