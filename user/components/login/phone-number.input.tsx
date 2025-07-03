@@ -35,7 +35,7 @@ export default function PhoneNumberInput({ width }: any) {
         >
           <SelectInput
           title ="+254"
-          placeholder="Select your country"
+          placeholder={countryCode}
           value={countryCode}
           onValueChange={(text)=>setCountryCode(text)}
           showWarning={false}

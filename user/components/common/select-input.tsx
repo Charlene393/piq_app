@@ -20,7 +20,7 @@ export default function SelectInput({title, placeholder, items, value, warning, 
     const {colors} = useTheme();
     return(
         <View>
-            <Text style = {[styles.title, {color:colors.text}]}>{title}</Text>
+            {/*<Text style = {[styles.title, {color:colors.text}]}>{title}</Text>*/}
             <RNPickerSelect
             onValueChange = {onValueChange}
             items = {items}
@@ -30,11 +30,13 @@ export default function SelectInput({title, placeholder, items, value, warning, 
                     ...styles.input,
                     backgroundColor: color.lightGray,
                     borderColor: colors.border,
+                    height: windowHeight(30),
                 },
                 inputAndroid:{
                     ...styles.input,
                     backgroundColor: color.lightGray,
                     borderColor: colors.border,
+                    height: windowHeight(30),
                 }
             }}
             value = {value}
