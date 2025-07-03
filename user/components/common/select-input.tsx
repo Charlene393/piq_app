@@ -24,7 +24,7 @@ export default function SelectInput({title, placeholder, items, value, warning, 
             <RNPickerSelect
             onValueChange = {onValueChange}
             items = {items}
-            placeholder = {{label: placeholder, value: null}}
+            placeholder = {{label: placeholder, value: value}}
             style = {{
                 inputIOS:{
                     ...styles.input,

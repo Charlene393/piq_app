@@ -9,7 +9,7 @@ import { useState } from "react";
 import { countryItems } from "@/configs/country-list";
 
 export default function PhoneNumberInput({ width }: any) {
-  const [countryCode, setCountryCode] = useState('+254');
+  const [countryCode, setCountryCode] = useState("+254");
   return (
     <View>
       <Text
