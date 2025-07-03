@@ -1,4 +1,5 @@
-import {View, Text, Image, Button, TouchableOpacity} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
+import Button from '@/components/common/button';
 import React from 'react';
 import AuthContainer from '@/utils/container/auth-container';
 import { windowHeight } from '@/themes/app.constant';

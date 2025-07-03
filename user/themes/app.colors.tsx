@@ -28,6 +28,8 @@ export type Color = {
     iconRed: string;
     darkBorder: string;
     selectPrimary: string;
+    secondaryFont: string;
+    red: string;
   };
   
   const color: Color = {
@@ -37,10 +39,12 @@ export type Color = {
     linearBorder: 'rgba(149, 143, 159, 0.00)',
     subtitle: '#9BA6B8',
     lightGreen: '#E8F4F1',
+    secondaryFont: "#8F8F8F",
+    red: '#FF4B4B',
     whiteColor: '#fff',
     blackColor: '#000',
     primaryGray: '#E9E9E9',
-    buttonBg: '#199675',
+    buttonBg: '#665CFF',
     iconBg: '#32A284',
     modelBg: 'rgba(0, 0, 0, 0.5)',
     darkHeader: '#272727',
