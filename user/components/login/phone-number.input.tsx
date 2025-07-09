@@ -11,9 +11,9 @@ import { countryItems } from "@/configs/country-list";
 interface Props {
   width?: number;
   phone_number: string;
-  setphone_number: (value: string) => void;
+  setphone_number: (phone_number: string) => void;
   countryCode: string;
-  setCountryCode: (value: string) => void;
+  setCountryCode: (countryCode: string) => void;
 }
 
 export default function PhoneNumberInput({ width, phone_number, setphone_number, countryCode, setCountryCode}: Props) {
@@ -63,6 +63,8 @@ export default function PhoneNumberInput({ width, phone_number, setphone_number,
             placeholderTextColor={color.subtitle}
             placeholder={"Enter your number"}
             keyboardType="numeric"
+            value={phone_number}
+            onChangeText={(text) => setphone_number(text)}
             maxLength={10}
           />
         </View>

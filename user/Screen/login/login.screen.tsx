@@ -9,13 +9,23 @@ import SignInText from '@/components/login/signin.text';
 import {external} from '@/styles/external.style';
 import PhoneNumberInput from '@/components/login/phone-number.input';
 import { router } from 'expo-router';
+import {useToast} from 'react-native-toast-notifications';
 export default function LoginScreen() {
 
     const [phone_number, setphone_number] = useState('')
     const [countryCode, setCountryCode] = useState('');
-    const handleSubmit = ()=>{
-
+    const toast = useToast();
+    const handleSubmit = async()=>{
+        if (phone_number === ""|| countryCode === "") {
+           
+            toast.show("Please fill in the fields!",{
+                placement: "bottom"
+            });
+        }else{
+            console.log(phone_number, countryCode);
+        }
     }
+
     return(
         <AuthContainer
         topSpace={windowHeight(150)}
