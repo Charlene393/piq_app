@@ -65,6 +65,10 @@ export default function PhoneNumberInput({ width, phone_number, setphone_number,
             keyboardType="numeric"
             value={phone_number}
             onChangeText={(text) => setphone_number(text)}
+            autoComplete="tel"
+            autoCapitalize="none"
+            autoCorrect={false}
+            
             maxLength={10}
           />
         </View>

@@ -10,6 +10,7 @@ import {external} from '@/styles/external.style';
 import PhoneNumberInput from '@/components/login/phone-number.input';
 import { router } from 'expo-router';
 import {useToast} from 'react-native-toast-notifications';
+import axios from 'axios';
 export default function LoginScreen() {
 
     const [phone_number, setphone_number] = useState('')
@@ -22,7 +23,17 @@ export default function LoginScreen() {
                 placement: "bottom"
             });
         }else{
-            console.log(phone_number, countryCode);
+            const phoneNumber = `${countryCode}${phone_number}`;
+            console.log(process.env.EXPO_PUBLIC_SERVER_URI);
+            await axios.post(`${process.env.EXPO_PUBLIC_SERVER_URI}/registeration`,{
+                phone_number: phoneNumber
+            }). then((res)=>{
+                console.log(res);
+            
+            }).catch((error)=>{
+                console.log(error);
+            })
+           
         }
     }
 
@@ -44,7 +55,7 @@ export default function LoginScreen() {
                         <View style = {[external.mt_25, external.Pb_15]}>
                             <Button
                             title = "Get OTP"
-                            onPress={()=>handleSubmit}
+                            onPress={handleSubmit}
 
                             />
                         </View>
